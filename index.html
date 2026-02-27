@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>A do më falësh? ❤️</title>
+<style>
+    body {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        background-color: #ffe6f0;
+        margin-top: 100px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    #yesBtn {
+        font-size: 20px;
+        padding: 10px 30px;
+        background-color: #ff4d6d;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    #noBtn {
+        font-size: 20px;
+        padding: 10px 30px;
+        background-color: gray;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-left: 20px;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>A do tma falesh isra te lutem? ❤️</h1>
+
+<button id="yesBtn">Po 😍</button>
+<button id="noBtn">Jo 😢</button>
+
+<script>
+let yesBtn = document.getElementById("yesBtn");
+let noBtn = document.getElementById("noBtn");
+let size = 20;
+
+noBtn.addEventListener("click", function() {
+    size += 20;
+    yesBtn.style.fontSize = size + "px";
+    yesBtn.style.padding = (size/2) + "px " + size + "px";
+});
+
+yesBtn.addEventListener("click", function() {
+    document.body.innerHTML = "<h1>YEEES ❤️ Të dua shumë 😘🌹</h1>";
+});
+</script>
+
+</body>
+</html>
